@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Estrella"
+﻿Shader "Custom/Estrella"
 {
  SubShader
  {

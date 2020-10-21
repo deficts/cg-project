@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Star
-  m_Shader: {fileID: 4800000, guid: 42a884770bf27428bac6c645dc43359f, type: 3}
+  m_Shader: {fileID: 4800000, guid: 75f9db502a2eb4ac4b764b6e396c03b1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -21,3 +21,4 @@ Material:
     m_TexEnvs: []
     m_Floats: []
     m_Colors: []
+  m_BuildTextureStacks: []
