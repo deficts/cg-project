@@ -28,18 +28,20 @@
             float4 vert(vInput input) : SV_POSITION {
                             float4 result = UnityObjectToClipPos(input.pos);
                 float3 normal = normalize(UnityObjectToClipPos(input.normal));
-                float val=sin(_Time.z*5);
-                if(val>0){
-
-                    return float4 (result.x+normal.x*val*val, 
-                    result.y , result.z+normal.z*val*val, result.w);
+                float val=sin(_Time.x*5);
                 
-                }
-                else{
-                    return float4(result.x, 
-                    result.y+normal.y*(-val) , result.z, result.w);
+                    return float4(result.x,result.y,result.z*(input.normal.x-input.normal.y)*val*5,result.w);
+                   
+                    //return float4 (result.x+normal.x*val*val, 
+                    //result.y +(1-(normal.x-normal.z)*val), result.z+normal.z*val*val, result.w);
                 
-                }
+                
+                    return float4(result.x,result.y,result.z*(input.normal.x-input.normal.y)*val*5,result.w);
+                
+                    //return float4(result.x, 
+                   // result.y+normal.y*(-val) , result.z, result.w);
+                
+                
                 
 
             }
